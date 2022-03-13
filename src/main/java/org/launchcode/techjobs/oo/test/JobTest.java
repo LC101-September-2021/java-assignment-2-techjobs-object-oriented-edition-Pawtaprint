@@ -95,10 +95,11 @@ public class JobTest {
     @Test
     public void testToStringStartsAndEndsWithNewLine() {
         Job Four = new Job("Carter", new Employer("Riot Games"), new Location("Los Angeles"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        assertTrue(Four.toString().charAt(0) == Four.toString().charAt(Four.toString().length()-1));
-        assertTrue(Four.toString().charAt(0) == Four.toString().charAt(Four.toString().length()-1));
 
+        Assert.assertEquals(Four.toString().charAt(0), Four.toString().charAt(Four.toString().length()-1));
+        Assert.assertEquals(Four.toString().charAt(0), Four.toString().charAt(Four.toString().length()-1));
 
+        //anything
 
     }
 
